@@ -1,0 +1,17 @@
+$background-color: #EEF2F3;
+$white: #FFFFFF;
+$grey: #F4F4F4;
+$background-dark: #18304F;
+$background-light: #8CB2FB;
+
+$text-primary: #0F2846;
+$primary-color: #2F69FE;
+$text-secondary: #919297;
+
+*:not(.material-icons-outlined) {
+  font-family: Montserrat;
+}
+
+.material-icons-outlined {
+  user-select: none;
+}
