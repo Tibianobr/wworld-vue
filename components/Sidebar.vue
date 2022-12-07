@@ -2,22 +2,25 @@
   <div class="sidebar-wrapper">
     <div>
      <Logo/>
-      <ul>
-        <li v-for="link in links" :class="link.enabled ? 'active' : '' ">
+      <nav>
+        <ul>
+          <li v-for="link in links" :class="link.enabled ? 'active' : '' ">
         <span class="material-icons-outlined">
           {{ link.icon }}
         </span>
-          <span>{{ link.label }}</span>
-        </li>
-      </ul>
+            <span>{{ link.label }}</span>
+          </li>
+        </ul>
+      </nav>
     </div>
 
-    <li class="logout">
+    <nuxt-link event=""
+               @click.native="logoutApi('/login')" to="/login"  class="logout">
       <span class="material-icons-outlined">
           logout
         </span>
       <span>Logout account</span>
-    </li>
+    </nuxt-link>
   </div>
 </template>
 
@@ -36,6 +39,12 @@ export default {
           "label": "salve",
           "enabled": false
         }]
+    }
+  },
+  methods: {
+    logoutApi(path) {
+      console.log('Logout!', path)
+      this.$router.push(path)
     }
   }
 }

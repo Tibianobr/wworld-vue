@@ -21,6 +21,8 @@ export default {
   width: 100%;
 
   .dashboard-central {
+    display: flex;
+    flex-direction: column;
     width: 100%;
   }
 }

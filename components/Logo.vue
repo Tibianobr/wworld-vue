@@ -19,11 +19,11 @@ export default {
   align-items: center;
   gap: 8px;
   color: $text-primary;
-  font-size: 32px;
+  font-size: $font-size-lg;
   font-weight: 900;
 
   span {
-    font-size: 32px !important;
+    font-size: $font-size-lg;
   }
 }
 </style>
